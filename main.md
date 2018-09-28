@@ -6,5 +6,16 @@
 5.  Code samples:
     * [A Ready To Use Software Licensing Solution in C#](https://www.codeproject.com/Articles/996001/A-Ready-To-Use-Software-Licensing-Solution-in-Csha)
     * [varification by computer id](https://www.codeproject.com/Articles/15496/Application-Trial-Maker-2)
+    
+
+# Application Update Settings
+1. Clickonce strategies. [here](https://docs.microsoft.com/en-us/visualstudio/deployment/choosing-a-clickonce-update-strategy?view=vs-2017).
+
+# Logging in C# and .net
+1. [Logging in .NET: TraceSource and log4net](https://logmatic.io/blog/logging-in-net-the-power-of-c-logs/)
+2. System.Dianostic tutorial. [here](http://www.thejoyofcode.com/from_zero_to_logging_with_system_diagnostics_in_15_minutes.aspx)
 
  
+# Data migration, entity framework
+
+# Testing in .net framework
