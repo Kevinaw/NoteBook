@@ -23,7 +23,7 @@
 
 # Entity Fromework Code First with SQLite Database.
 1. [Source and Demo Code](https://github.com/msallin/SQLiteCodeFirst)
-2. Create/open database
+2. Create/open database. (Remember: Change provider name "System.Data.SQLite.EF6" to "System.Data.SQLite" in App.config.)
 ```c#
    string filename = "";
    OpenFileDialog dlg = new OpenFileDialog();
@@ -41,4 +41,4 @@
        }
    }
 ```
-Remember: Change provider name "System.Data.SQLite.EF6" to "System.Data.SQLite" in App.config.
+
