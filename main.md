@@ -19,3 +19,26 @@
 # Data migration, entity framework
 
 # Testing in .net framework
+
+
+# Entity Fromework Code First with SQLite Database.
+1. [Source and Demo Code](https://github.com/msallin/SQLiteCodeFirst)
+2. Create/open database
+```c#
+   string filename = "";
+   OpenFileDialog dlg = new OpenFileDialog();
+   if(dlg.ShowDialog() == DialogResult.OK)
+   {
+       filename = dlg.FileName;
+
+       var conn = DbProviderFactories.GetFactory("System.Data.SQLite").CreateConnection();
+       conn.ConnectionString = "data source=" + filename + ";foreign keys=true";
+
+       using(var context = new FootballDbContext(conn, true))
+       {
+           if (context.Database.Exists() == true)
+               MessageBox.Show("opening.");
+       }
+   }
+```
+Remember: Change provider name "System.Data.SQLite.EF6" to "System.Data.SQLite" in App.config.
